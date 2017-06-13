@@ -17,7 +17,7 @@ for(var i = 0; i < keys.length; i++)
 
 		input.style.fontSize = "16px";
 		var equation = input.innerHTML;
-		console.log(equation.length);
+
 		var keyVal = this.innerHTML;
 		if(equation.length == 42)//42 elements is max length of equation
 		{
