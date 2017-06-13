@@ -1,0 +1,149 @@
+/* Common */
+*{
+	/*font: bold 14px sans-serif;*/
+}
+html {
+	height: 100%;
+	background: white;
+	background: radial-gradient(circle, #fff 10%, #77A6F5);
+	background-size: cover;
+	font-family: Verdana;
+}
+
+/* Container */
+#calculator{
+	margin: 80px auto;
+	padding: 25px 20px;
+	width: 456px;
+	height: 280px;
+
+	border-radius: 8px;
+	background: #719DA3;
+	/*background: #6265FF;*/
+	box-shadow: 0 5px 0 #1A1A3B;
+}
+
+/* Screen */
+.screen{
+	width: 448px;
+	height: 22px;
+	padding: 25px 4px 3px 4px;
+	background: #3E599A;
+	color: #D8E6FC;
+	user-select: none;
+	text-align: right;
+	cursor: default;
+	border-radius: 5px;
+	box-shadow: inset 0 4px 0 #001152;
+}
+/* Keys */
+.keys{
+	margin-top: 10px;
+	padding-bottom: 10px;
+	height: 210px;
+
+	display: flex;
+	font-size: 20px;
+}
+.keys > section{
+	display: flex;
+
+}
+.keys > section > div{
+	width: 70px;
+	height: 31px;
+	padding-top: 9px;
+
+	text-align: center;
+	background: #B6D8DA;
+	border-radius: 5px;
+	box-shadow: 0 4px 0 #1B3D3F;
+
+	user-select: none;
+	cursor: pointer;
+	transition: all 0.1s;
+}
+.keys > section > div:active{
+	transform: translateY(3px);
+	top:4px;
+	box-shadow: 0 1px 0 #444;
+}
+.keys > section > div:hover{
+	background: #385FB5;
+	color: white;
+}
+.keys > section > .clear{
+	color: #FFF;
+	background: #C70909;
+	box-shadow: 0 4px 0 #740000;
+}
+.keys > section > .clear:hover{
+	background: #D60000;
+}
+.keys > section > .clear-e{
+	color: #FFF;
+	background: #CC2D2F;
+	box-shadow: 0 4px 0 #740000;
+}
+.keys > section > .clear-e:hover{
+	background: #C70909;
+}
+.keys > section > .ops{
+	background: #ED9866;
+	box-shadow: 0 4px 0 #AF2120;
+}
+.keys > section > .ops:hover{
+	background: #CA4C1A;
+}
+.keys > section > .convert{
+	background: #49B161;
+	box-shadow: 0 4px 0 #006313;
+}
+.keys > section > .convert:hover{
+	background: #238B3B;
+}
+.keys > section > .brackets{
+	background: #FCD550;
+	box-shadow: 0 4px 0 #956E00;
+}
+.keys > section > .brackets:hover{
+	background: #D4AD00;
+
+}
+
+/* Numbers */
+.numbers{
+	width: 228px;
+	/*height: 220px;*/
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-content: space-between;
+}
+.keys>.numbers>.wide{
+	width: 149px;
+}
+
+/* Operators */
+.operators{
+	width: 222px;
+	padding-left: 6px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-content: space-between;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
