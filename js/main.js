@@ -15,6 +15,7 @@ for(var i = 0; i < keys.length; i++)
 {
 	keys[i].onclick = function(e){
 
+		input.style.fontSize = "16px";
 		var equation = input.innerHTML;
 		console.log(equation.length);
 		var keyVal = this.innerHTML;
@@ -427,6 +428,10 @@ function isNumeric(n)//checking if element is number
 		
 		var output = document.querySelector('.screen');
 		var result  = prefixOutput.replace(/\*/g, '×').replace(/\//g, '÷');
+		if(result.length > 40)
+		{
+			output.style.fontSize = "10px";
+		}
 		output.innerHTML = result;
 
 		isSolved = true;
@@ -478,12 +483,17 @@ function isNumeric(n)//checking if element is number
 				operatorStack.pop();
 			}
 		}
+		operatorStack = cleaner(operatorStack);//clening unneeded paretheses
 		while (operatorStack.length > 0)//putting every operator that is left to our result
 		{
 			postfixOutput += operatorStack.pop() + ' ';
 		}
 		var output = document.querySelector('.screen');
 		var result  = postfixOutput.replace(/\*/g, '×').replace(/\//g, '÷');
+		if(result.length > 40)
+		{
+			output.style.fontSize = "10px";
+		}
 		output.innerHTML = result;
 
 		isSolved = true;
